@@ -1,0 +1,48 @@
+/*
+Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+	background-color: darken($color02, 10%);
+	border-top: 1px solid #ececec;
+	clear: both;
+	padding: 40px 0;
+	color: #fff;
+}
+
+.footer-widgets .widget-title {
+	color: #fff;
+}
+
+.footer-widgets a {
+	color: #fff;
+}
+
+.footer-widgets input {
+	border: 1px solid #333;
+}
+
+.footer-widgets li {
+	border-bottom: 1px dotted #ececec;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3 {
+	width: 340px;
+}
+
+.footer-widgets-1 {
+	margin-right: 60px;
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+	float: left;
+}
+
+.footer-widgets-3 {
+	float: right;
+}

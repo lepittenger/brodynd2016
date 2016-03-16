@@ -1,0 +1,91 @@
+/*
+	Theme Name: BrodyND Theme
+	Theme URI: http://my.studiopress.com/themes/brodynd/
+	Description: A mobile responsive and HTML5 theme built for the Genesis Framework based on Enterprise Pro.
+	Author: Lauren Pittenger
+	Author URI: http://laurenpittenger.com/
+
+	Version: 2.1.1
+
+	Tags: black, blue, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, premise-landing-page
+
+	Template: genesis
+	Template Version: 2.1
+
+	License: GPL-2.0+
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Table of Contents
+
+	- Imports
+	- HTML5 Reset
+		- Baseline Normalize
+		- Box Sizing
+		- Float Clearing
+	- Defaults
+		- Typographical Elements
+		- Headings
+		- Objects
+		- Gallery
+		- Forms
+		- Tables
+	- Structure and Layout
+		- Site Containers
+		- Column Widths and Positions
+		- Column Classes
+	- Common Classes
+		- Avatar
+		- Genesis
+		- Search Form
+		- Titles
+		- WordPress
+	- Widgets
+		- Featured Content
+	- Plugins
+		- Genesis eNews Extended
+		- Genesis Responsive Slider
+		- Gravity Forms
+		- Jetpack
+	- Site Header
+		- Title Area
+		- Widget Area
+	- Site Navigation
+		- Header Navigation
+		- Primary Navigation
+		- Secondary Navigation
+		- Responsive Menu
+	- Content Area
+		- Home Page
+		- Entries
+		- Entry Meta
+		- After Entry
+		- Pagination
+		- Comments
+	- Sidebars
+	- Footer Widgets
+	- Site Footer
+	- Media Queries
+		- Retina Display
+		- Max-width: 1139px
+		- Max-width: 1023px
+		- Max-width: 767px
+
+*/
+
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/imports';
+@import 'partials/reset';
+@import 'partials/defaults';
+@import 'partials/structure';
+@import 'partials/common';
+@import 'partials/plugins';
+@import 'partials/site-header';
+@import 'partials/site-navigation';
+@import 'partials/content';
+@import 'partials/sidebars';
+@import 'partials/footer-widgets';
+@import 'partials/site-footer';
+@import 'partials/footer-widgets';
+@import 'partials/mediaqueries';

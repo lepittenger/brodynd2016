@@ -99,3 +99,12 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Home - Bottom', 'brodynd' ),
 	'description' => __( 'This is the bottom section of the homepage.', 'brodynd' ),
 ) );
+
+//* Customize the entire footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'highspire_custom_footer' );
+function highspire_custom_footer() {
+	?>
+	<p>&copy; Copyright 2012 - <?php echo date('Y'); ?> <a href="<?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name'); ?></a>, all rights reserved. Site by <a href="http://laurenpittenger.com">Lauren Pittenger</a>.</p>
+	<?php
+}

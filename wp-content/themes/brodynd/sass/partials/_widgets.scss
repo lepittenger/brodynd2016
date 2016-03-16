@@ -1,0 +1,126 @@
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget {
+	word-wrap: break-word;
+	margin-bottom: 40px;
+}
+
+.widget li {
+	border-bottom: 1px dotted #ececec;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.widget ol > li {
+	list-style-position: inside;
+	list-style-type: decimal;
+	padding-left: 20px;
+	text-indent: -20px;
+}
+
+.widget li li {
+	border: none;
+	margin: 0 0 0 30px;
+	padding: 0;
+}
+
+.widget ul > li:last-child,
+.widget p:last-child {
+	margin-bottom: 0;
+}
+
+.widget_calendar table {
+	width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+/* Featured Content
+--------------------------------------------- */
+
+.after-entry .widget.featured-content,
+.featured-content,
+.home-bottom .widget.featured-content,
+.sidebar .widget.featured-content {
+	border-bottom-width: 0;
+	padding: 0;
+}
+
+.after-entry .featured-content .widget-title,
+.featured-content .widget-title {
+	margin: 0;
+	padding: 30px 40px;
+}
+
+.featured-content .entry {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #ececec;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+}
+
+.featured-content .entry-header {
+	border-bottom: 1px solid #ececec;
+	margin: 0;
+	padding: 30px 40px;
+}
+
+.featured-content .entry-title {
+	font-size: 20px;
+	margin: 0;
+}
+
+.featured-content .entry-content {
+	padding: 40px;
+}
+
+.featured-content .alignnone {
+	background: #f8f8f8;
+	border-bottom: 1px solid #ececec;
+	margin-bottom: 0;
+}
+
+.featured-content img {
+	margin-bottom: -7px;
+}
+
+.featured-content .more-link {
+	display: block;
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+.featured-content .more-from-category,
+.featured-content ul {
+	border-bottom: 1px solid #ececec;
+	margin: 0;
+	padding: 40px;
+}
+
+.footer-widgets  .featured-content .alignnone {
+	margin-bottom: 24px;
+}
+
+.footer-widgets .featured-content .entry {
+	background: none;
+	border: none;
+	margin-bottom: 30px;
+}
+
+.footer-widgets .featured-content .entry-header,
+.footer-widgets .featured-content .more-from-category,
+.footer-widgets .featured-content ul {
+	border: none;
+	padding: 0 0 10px;
+}
+
+.footer-widgets .featured-content .entry-content {
+	padding: 0;
+}

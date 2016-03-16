@@ -1,0 +1,83 @@
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+	background-color: #fff;
+	min-height: 150px;
+}
+
+.site-header .wrap {
+	padding: 40px 0;
+}
+
+/* Title Area
+--------------------------------------------- */
+
+.title-area {
+	float: left;
+	padding: 0 0 4px;
+	width: 320px;
+}
+
+.header-full-width .title-area {
+	width: 100%;
+}
+
+.site-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.site-title a,
+.site-title a:hover {
+	color: $color04;
+}
+
+.header-image .site-title > a {
+	background-position: top !important;
+	float: left;
+	min-height: 80px;
+	width: 100%;
+}
+
+.site-description {
+	color: #aaa;
+	font-family: 'Neuton', serif;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.site-description,
+.site-title {
+	margin-bottom: 0;
+}
+
+.header-image .site-description,
+.header-image .site-title {
+	display: block;
+	text-indent: -9999px;
+}
+
+/* Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+	float: right;
+	text-align: right;
+	width: 720px;
+}
+
+.site-header .widget-area .widget {
+	margin-bottom: 0;
+}
+
+.site-header .genesis-nav-menu li {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
