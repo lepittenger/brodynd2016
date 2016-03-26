@@ -29,6 +29,8 @@ function brodynd_load_scripts() {
 
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:400,400italic,700,300,800,200', array(), CHILD_THEME_VERSION );
 
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), CHILD_THEME_VERSION);
+
 }
 
 //* Add new image sizes
@@ -39,8 +41,8 @@ add_image_size( 'home-top', 750, 600, TRUE );
 add_theme_support( 'custom-header', array(
 	'header-selector' => '.site-title a',
 	'header-text'     => false,
-	'height'          => 80,
-	'width'           => 320,
+	'height'          => 83,
+	'width'           => 402,
 ) );
 
 //* Add support for structural wraps
@@ -107,4 +109,20 @@ function highspire_custom_footer() {
 	?>
 	<p>&copy; Copyright 2012 - <?php echo date('Y'); ?> <a href="<?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name'); ?></a>, all rights reserved. Site by <a href="http://laurenpittenger.com">Lauren Pittenger</a>.</p>
 	<?php
+}
+
+//* Remove the entry meta from reviews posts
+add_filter( 'genesis_post_info', 'remove_reviews_post_info' );
+function remove_reviews_post_info($post_info) {
+	if ( is_singular('grfwp-review') || is_post_type_archive('grfwp-review') ) :
+		$post_info = '[post_edit]';
+		return $post_info;
+	endif;
+}
+add_filter( 'genesis_post_meta', 'remove_reviews_post_meta' );
+function remove_reviews_post_meta($post_meta) {
+	if ( is_singular('grfwp-review') || is_post_type_archive('grfwp-review') ) :
+		$post_meta = '';
+		return $post_info;
+	endif;
 }

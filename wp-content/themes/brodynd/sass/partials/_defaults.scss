@@ -6,9 +6,9 @@ Defaults
 --------------------------------------------- */
 
 body {
-	background-color: #fff;
-	color: #777;
-	font-family: 'Neuton', serif;
+	background: url("images/lightpaperfibers.png") repeat;
+	color: #333;
+	font-family: 'Arial', sans-serif;
 	font-weight: 300;
 	line-height: 1.625;
 }
@@ -99,7 +99,6 @@ h4,
 h5,
 h6 {
 	color: darken($color02, 10%);
-	font-family: 'Titillium Web', sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0 0 10px;
@@ -278,7 +277,7 @@ input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
 .home-top .more-link:hover {
-	background-color: #333;
+	background-color: darken($color04, 10%);
 	color: #fff;
 }
 

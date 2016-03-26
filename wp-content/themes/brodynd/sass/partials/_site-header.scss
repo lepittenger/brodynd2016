@@ -3,12 +3,12 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	background-color: rgba(#F9F8F5, 0.5);
 	min-height: 150px;
 }
 
 .site-header .wrap {
-	padding: 40px 0;
+	padding: 20px 0 40px 0;
 }
 
 /* Title Area
@@ -17,7 +17,7 @@ Site Header
 .title-area {
 	float: left;
 	padding: 0 0 4px;
-	width: 320px;
+	width: 402px;
 }
 
 .header-full-width .title-area {
@@ -29,6 +29,7 @@ Site Header
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.2;
+	margin-top: 20px;
 }
 
 .site-title a,
@@ -39,7 +40,7 @@ Site Header
 .header-image .site-title > a {
 	background-position: top !important;
 	float: left;
-	min-height: 80px;
+	min-height: 83px;
 	width: 100%;
 }
 
@@ -70,6 +71,7 @@ Site Header
 	float: right;
 	text-align: right;
 	width: 720px;
+	font-size: 0.8em;
 }
 
 .site-header .widget-area .widget {
@@ -80,4 +82,11 @@ Site Header
 	border: none;
 	margin: 0;
 	padding: 0;
+}
+
+.site-header .button {
+	padding: 8px 12px;
+	text-transform: uppercase;
+	margin-left: 20px;
+	font-size: 1em;
 }

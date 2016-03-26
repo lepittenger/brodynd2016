@@ -72,3 +72,138 @@ div.gform_wrapper form li {
 #wpstats {
 	display: none;
 }
+
+/* Soliloquy
+--------------------------------------------- */
+
+.soliloquy-container {
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.soliloquy-control-nav {
+		bottom: 0;
+	}
+
+	.soliloquy-caption {
+		background: rgba(#000, 0.6) !important;
+		bottom: auto !important;
+	  padding: 1.875em !important;
+	  color: #fff !important;
+	  width: 40% !important;
+	}
+
+	.soliloquy-caption.soliloquy-caption-right {
+		height: auto;
+		left: auto;
+		right: 20px;
+		top: 20px;
+	}
+
+	.soliloquy-caption.soliloquy-caption-left {
+		height: auto;
+		left: 20px;
+		right: auto;
+		top: 20px;
+	}
+
+	.soliloquy-caption-inside {
+		background: none !important;
+	  padding: 0 !important;
+	  text-align: center !important;
+	  font-size: 1.5em !important;
+	  text-shadow: none !important;
+
+		.soliloquy-caption-heading {
+		  color: #fff;
+		  font-size: 1.4em;
+		  border-bottom: 1px solid #ececec;
+		  margin: 0 0 0.66em;
+		  padding: 0 0 0.66em;
+		  line-height: 1.2;
+		}
+
+		a {
+			text-decoration: none;
+			background: saturate($color02, 30%);
+			color: #fff;
+			display: block;
+			padding: 5px 10px;
+			margin: 20px auto 0 auto;
+
+			&:hover, &:focus {
+				background: $color03;
+			}
+		}
+	}
+	h2 {
+		color: saturate($color02, 20%);
+		margin-bottom: 20px;
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (max-width: 1023) {
+	.soliloquy-container .soliloquy-caption {
+		font-size: 0.9em !important;
+
+		.soliloquy-caption-inside {
+			font-size: 1.2em !important;
+		}
+
+		.soliloquy-caption-heading {
+			font-size: 1.1em !important;
+		}
+	}
+}
+@media only screen and (min-width: 600px) {
+	.soliloquy-container .soliloquy-caption {
+		height: auto !important;
+		left: 42px !important;
+		top: 30px !important;
+	}
+}
+@media only screen and (min-width: 700px) {
+	.soliloquy-container .soliloquy-caption {
+		left: 62px !important;
+		top: 40px !important;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.soliloquy-container .soliloquy-caption.soliloquy-caption-left,
+	.soliloquy-container .soliloquy-caption.soliloquy-caption-right {
+		width: 45% !important;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.soliloquy-container .soliloquy-caption {
+		font-size: 1.2em;
+		padding-top: 10px !important;
+		padding-bottom: 10px !important;
+
+		&.soliloquy-caption-left,
+		&.soliloquy-caption-right {
+			width: 100% !important;
+		}
+	}
+
+	.soliloquy-controls-direction {
+		display: none !important;
+	}
+}
+
+/* good reviews */
+
+.gr-review {
+	margin-bottom: 0 !important;
+}
+
+.gr-review-body {
+	font-size: 0.9em !important;
+}
+
+blockquote.gr-review::before {
+	left: -14px;
+}

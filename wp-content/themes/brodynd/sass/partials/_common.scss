@@ -26,6 +26,7 @@ Common Classes
 --------------------------------------------- */
 
 .breadcrumb {
+	font-size: 14px;
 	margin-bottom: 20px;
 }
 
@@ -35,14 +36,16 @@ Common Classes
 	border: 1px solid #ececec;
 	box-shadow: 0 1px #ececec;
 	margin-bottom: 40px;
-	padding: 40px;
+	padding: 20px;
 }
 
 .author-box-title {
-	color: #333;
-	font-family: 'Neuton', serif;
-	font-size: 16px;
-	margin-bottom: 4px;
+	color: $color04;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 14px;
 }
 
 .archive-description p:last-child,
@@ -90,9 +93,12 @@ Common Classes
 	margin: 0;
 }
 
-.entry-title a,
+.entry-title a {
+	color: $color03;
+}
+
 .sidebar .widget-title a {
-	color: #333;
+	color: #fff;
 }
 
 .entry-title a:hover {
@@ -109,8 +115,8 @@ Common Classes
 
 .home-bottom .widget-title,
 .sidebar .widget-title {
-	margin: -40px -40px 40px;
-	padding: 30px 40px;
+	margin: -20px -20px 20px;
+	padding: 20px 20px;
 }
 
 /* WordPress
