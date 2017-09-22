@@ -981,10 +981,9 @@ div.gform_wrapper form li {
 .soliloquy-container .soliloquy-control-nav {
   bottom: 0; }
 .soliloquy-container .soliloquy-caption {
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
   bottom: auto !important;
   padding: 1.875em !important;
-  color: #fff !important;
   width: 40% !important; }
 .soliloquy-container .soliloquy-caption.soliloquy-caption-right {
   height: auto;
@@ -1001,7 +1000,8 @@ div.gform_wrapper form li {
   padding: 0 !important;
   text-align: center !important;
   font-size: 1.5em !important;
-  text-shadow: none !important; }
+  text-shadow: none !important;
+  color: #333 !important; }
   .soliloquy-container .soliloquy-caption-inside .soliloquy-caption-heading {
     color: #fff;
     font-size: 1.4em;
@@ -1011,7 +1011,7 @@ div.gform_wrapper form li {
     line-height: 1.2; }
   .soliloquy-container .soliloquy-caption-inside a {
     text-decoration: none;
-    background: #96ce3a;
+    background: #8a020e;
     color: #fff;
     display: block;
     padding: 5px 10px;
@@ -1019,7 +1019,7 @@ div.gform_wrapper form li {
     .soliloquy-container .soliloquy-caption-inside a:hover, .soliloquy-container .soliloquy-caption-inside a:focus {
       background: #49562F; }
 .soliloquy-container h2 {
-  color: #93c246;
+  color: #657741;
   margin-bottom: 20px;
   font-size: 1.2em; }
 

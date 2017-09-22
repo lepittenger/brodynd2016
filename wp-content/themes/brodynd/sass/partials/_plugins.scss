@@ -88,10 +88,9 @@ div.gform_wrapper form li {
 	}
 
 	.soliloquy-caption {
-		background: rgba(#000, 0.6) !important;
+		background: rgba(#fff, 0.85) !important;
 		bottom: auto !important;
 	  padding: 1.875em !important;
-	  color: #fff !important;
 	  width: 40% !important;
 	}
 
@@ -115,6 +114,7 @@ div.gform_wrapper form li {
 	  text-align: center !important;
 	  font-size: 1.5em !important;
 	  text-shadow: none !important;
+		color: #333 !important;
 
 		.soliloquy-caption-heading {
 		  color: #fff;
@@ -127,7 +127,7 @@ div.gform_wrapper form li {
 
 		a {
 			text-decoration: none;
-			background: saturate($color02, 30%);
+			background: lighten($color04, 10%);
 			color: #fff;
 			display: block;
 			padding: 5px 10px;
@@ -139,7 +139,7 @@ div.gform_wrapper form li {
 		}
 	}
 	h2 {
-		color: saturate($color02, 20%);
+		color: lighten($color03, 10%);
 		margin-bottom: 20px;
 		font-size: 1.2em;
 	}

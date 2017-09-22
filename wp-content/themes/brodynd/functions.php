@@ -123,6 +123,28 @@ add_filter( 'genesis_post_meta', 'remove_reviews_post_meta' );
 function remove_reviews_post_meta($post_meta) {
 	if ( is_singular('grfwp-review') || is_post_type_archive('grfwp-review') ) :
 		$post_meta = '';
-		return $post_info;
+		return $post_meta;
 	endif;
 }
+
+//Custom login logo
+function custom_login_logo() {
+    echo '<style type="text/css">
+    h1 a {
+	    background-image:url('.get_stylesheet_directory_uri().'/images/wp-login.png) !important;
+	    background-size: 320px 66px !important;
+	    height: 66px !important;
+	    width: 320px !important;
+    }
+		.wp-core-ui .button-primary {
+			background: #580109;
+	    border-color: #580109 #3A020B #3A020B;
+	    -webkit-box-shadow: 0 1px 0 #3A020B;
+	    box-shadow: 0 1px 0 #3A020B;
+	    color: #fff;
+	    text-decoration: none;
+	    text-shadow: 0 -1px 1px #3A020B,1px 0 1px #3A020B,0 1px 1px #3A020B,-1px 0 1px #3A020B;
+		}
+    </style>';
+}
+add_action('login_head', 'custom_login_logo');
